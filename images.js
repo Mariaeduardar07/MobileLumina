@@ -1,4 +1,4 @@
-const capa = require("./img/capaLumina.png");
+const capa = require("./img/logoverdadeira.png");
 
 export default {
   capa,

@@ -15,8 +15,23 @@ export default function App() {
         <Image style={styles.tinyLogo} source={require("./img/logo_principal.svg")} />
         <Text style={styles.navbarTextRight}>Administração</Text>
       </View>
-      <View style={styles.content}>
+      <View style={styles.textIntroduction}>
         <Text>Colocar uma breve descrição sobre a representação dos icones aqui, ou um slogan</Text>
+      </View>
+
+      <View style={styles.containerIntroduction}>
+        <View>
+          <Image style={styles.imgIntroduction} source={require("./img/alvo.png")} />
+          <Text style={styles.text}>Capacitar as mulheres a se encontrarem através do autocuidado.</Text>
+        </View>
+        <View>
+          <Image style={styles.imgIntroduction} source={require("./img/diamente.png")} />
+          <Text style={styles.text}>Capacitar as mulheres a se encontrarem através do autocuidado.</Text>
+        </View>
+        <View>
+          <Image style={styles.imgIntroduction} source={require("./img/olho.png")} />
+          <Text style={styles.text}>Capacitar as mulheres a se encontrarem através do autocuidado.n</Text>
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -48,7 +63,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "70%",
+    height: "90%",
   },
   navbarText: {
     position: "absolute",
@@ -61,11 +76,10 @@ const styles = StyleSheet.create({
   tinyLogo: {
     position: "absolute",
     left: "50%",
-    transform: [{ translateX: -60 }],
+    transform: [{ translateX: -50 }],
     width: 100,
     height: 20,
     marginTop: 10,
-  
   },
   navbarTextRight: {
     position: "absolute",
@@ -75,9 +89,29 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontFamily: "Poppins_100Thin",
   },
-  content: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+  containerIntroduction: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    margin: 20,
+  },
+  imgIntroduction: {
+    width: 30,
+    height: 30,
+    margin: 30,
+    // marginTop: 1.5,
+  },
+  textIntroduction: {
+    // margin: 15,
+    fontSize: 20,
+    alignItems: "center", 
+    justifyContent: "center", 
+    textAlign: "center", 
+    left: 5,
+  },
+
+  text: {
+    fontSize: 10,
+    width: 100,
+    textAlign: "center",
   },
 });
