@@ -12,9 +12,11 @@ export default function App() {
       <View style={styles.imageContainer}>
         <Image source={images.capa} style={styles.image} />
         <Text style={styles.navbarText}>Contato</Text>
+        <Image style={styles.tinyLogo} source={require("./img/logo_principal.svg")} />
+        <Text style={styles.navbarTextRight}>Administração</Text>
       </View>
       <View style={styles.content}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text>Colocar uma breve descrição sobre a representação dos icones aqui, ou um slogan</Text>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -46,15 +48,32 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "100%",
+    height: "70%",
   },
   navbarText: {
     position: "absolute",
-    bottom: 10,
-    left: 10,
+    left: 30,
     color: "white",
-    fontSize: 20,
-    fontWeight: "bold",
+    fontSize: 10,
+    marginTop: 10,
+    fontFamily: "Poppins",
+  },
+  tinyLogo: {
+    position: "absolute",
+    left: "50%",
+    transform: [{ translateX: -60 }],
+    width: 100,
+    height: 20,
+    marginTop: 10,
+  
+  },
+  navbarTextRight: {
+    position: "absolute",
+    right: 30,
+    color: "white",
+    fontSize: 10,
+    marginTop: 10,
+    fontFamily: "Poppins_100Thin",
   },
   content: {
     flex: 1,
